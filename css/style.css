@@ -846,6 +846,33 @@ html, body{ height: 100%; }
     display: inline-block;
     padding-top: 10px;
 }
+.tab-menu {
+    max-width: 2100px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal del contenedor */
+}
+
+.tab-menu .slider.slider-nav {
+    display: flex;
+    justify-content: space-between; /* Distribución uniforme */
+    align-items: center; /* Centrado vertical */
+    padding: 20px 0; /* Espacio interno */
+}
+
+.tab-title-menu {
+    width: 700px; /* Ancho fijo de cada subtitulo */
+    text-align: center; /* Centrado del contenido */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho */
+    padding: 0 10px; /* Espacio interno */
+    margin: 0 auto; /* Centrado horizontal */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el texto centrado */
+
+}
+
+
 
 .tab-title-menu p{
     font-size:35px;
@@ -937,7 +964,12 @@ html, body{ height: 100%; }
     color:#fff;
 }
 
-
+.icon-img {
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    width: 50px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: auto;
+}
 
 
 /*------------------------------------------------------------------
@@ -1611,6 +1643,18 @@ textarea:focus, input:focus, select:focus, .bootstrap-select .dropdown-toggle:fo
     background-attachment:fixed;
     background-size:cover;
     position:relative;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del formulario */
+.form-box1 {
+    width: 3000%; /* Puedes ajustar esto según sea necesario */
+    max-width: 500px; /* Establece un ancho máximo si es necesario */
 }
 
 .footer-news::before {
